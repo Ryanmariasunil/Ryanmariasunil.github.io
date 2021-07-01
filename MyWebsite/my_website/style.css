@@ -1,0 +1,453 @@
+*{ margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+}
+.nav-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.navbar.sticky{
+    padding: 15px 0;
+    background:rgb(5, 161, 83);
+}
+.navbar .nav-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: rgba(4, 233, 92, 0.938);
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: rgba(4, 233, 92, 0.938);
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+
+#banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 56, 28, 0.747)), url(../images/Ryan4.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    width: 1519px;
+    height: 753px;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.banner-txt{
+    text-align: left;
+    color: ivory;
+    padding-top: 350px;
+    padding-left: 1000px;
+    font-size: 265%;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.banner-txt P{
+    font-size: 220%;
+    color: rgba(4, 233, 92, 0.938);
+}
+
+#about{
+    position: absolute;
+    padding-top: 70px;
+    margin-left: 150px;
+    width: 1250px;
+    height: 753px;
+
+}
+.about-text{
+    height: 753px;
+    position: relative;
+}
+.about-img img{
+    width: 80%;
+    height: 25%;
+    object-fit: cover;
+    border-radius: 8px;
+
+}
+
+.about-txt1 {
+    position: relative;
+    text-align: center;
+    color :rgb(2, 2, 2);
+    font-family: 'Libre Baskerville', serif;
+    font-size: 170%;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.about-txt1::before {
+    content: "";
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    background :rgb(0, 0, 0);
+    transform: translateX(-50%);
+}
+.about-txt1::after {
+    content: "who i am";
+    position: absolute;
+    text-align: center;
+    bottom: -14px;
+    left: 50%;
+    font-size: 20px;
+    color:rgb(5, 161, 83);
+    padding: 5px;
+    background :#fff;
+    transform: translateX(-50%);
+}
+
+.about-txt{
+    display: flex;
+}
+.about-txt .left{
+    width: 45%;
+    padding-left: 70px;
+}
+
+.about-txt .right{
+    width: 85%;
+}
+
+.about-content1{
+    font-size: 35px;
+    padding:20px 0;
+    color: rgb(10, 10, 10);
+}
+
+.right p{
+    text-align: justify;
+    font-size: 20px;
+    color:rgb(5, 5, 5);
+}
+
+#edu{
+    position: absolute;
+    padding-top: 753px;
+    margin: 0%;
+    width: 1250px;
+    height: 1506px;
+}
+.max-width{
+    margin: 0;
+    background:rgb(5, 5, 5);
+    background-position-x: left;
+    width:1519px ;
+    height: 753px;
+    position: relative;
+}
+.edu-txt {
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+    color :rgb(246, 248, 247);
+    font-family: 'Libre Baskerville', serif;
+    font-size: 170%;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.edu-txt::before {
+    content: "";
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    left: 50%;
+    width: 290px;
+    height: 3px;
+    background :rgb(246, 248, 247);
+    transform: translateX(-50%);
+}
+.edu-txt::after {
+    content: "what i studied";
+    position: absolute;
+    text-align: center;
+    bottom: -14px;
+    left: 50%;
+    font-size: 20px;
+    color:rgb(5, 161, 83);
+    padding: 5px;
+    background :rgb(5, 5, 5);
+    transform: translateX(-50%);
+    
+}
+.edu-content{
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.card{
+    width: calc(33% -20px);
+    background :rgb(5, 161, 83);
+    text-align: center;
+    border-radius: 6px;
+    padding: 60px 60px;
+    transition: all 0.3s ease;
+}
+
+.edu-text{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight:bolder;
+    margin: 10px 0 7px 0;
+}
+
+.box p{
+    font-size: 20px;
+    color:rgb(246, 247, 244);
+    font-weight: 400;
+}
+.box{
+    transition: all 0.3s ease;
+}
+
+#fam{
+    position: absolute;
+    padding-top: 1506px;
+    margin: 0%;
+    width: 1250px;
+    height: 1506px;
+}
+
+.fam-width{
+    margin: 0;
+    background-position-x: left;
+    width:1519px ;
+    height: 850px;
+    position: relative;
+}
+
+.fam-txt {
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+    color :rgb(8, 8, 8);
+    font-family: 'Libre Baskerville', serif;
+    font-size: 170%;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.fam-txt::before {
+    content: "";
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    background :rgb(5, 5, 5);
+    transform: translateX(-50%);
+}
+.fam-txt::after {
+    content: "who with me";
+    position: absolute;
+    text-align: center;
+    bottom: -14px;
+    left: 50%;
+    font-size: 20px;
+    color:rgb(5, 161, 83);
+    padding: 5px;
+    background :#fff;
+    transform: translateX(-50%);
+}
+.fam-content1,.fam-content2{
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+}
+
+.fam1 img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.fam-text{
+    font-size: 29px;
+    color: rgb(250, 250, 250);
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.fam-width .fam-content .card{
+    height: 295px;
+    width: 400px;
+}
+
+#contact{
+    position: absolute;
+    padding-top: 2340px;
+    margin: 0%;
+    width: 1250px;
+    height: 2267px;
+}
+
+.contact-width{
+    margin: 0;
+    background-position-x: left;
+    width:1519px ;
+    height: 650px;
+    position: relative;
+    background:rgb(8, 8, 8);
+}
+
+.contact-txt {
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+    color :rgb(243, 247, 245);
+    font-family: 'Libre Baskerville', serif;
+    font-size: 170%;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.contact-txt::before {
+    content: "";
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    left: 50%;
+    width: 350px;
+    height: 3px;
+    background :rgb(246, 247, 246);
+    transform: translateX(-50%);
+}
+.contact-txt::after {
+    content: "get in touch";
+    position: absolute;
+    text-align: center;
+    bottom: -14px;
+    left: 50%;
+    font-size: 20px;
+    color:rgb(5, 161, 83);
+    padding: 5px;
+    background :rgb(7, 7, 7);
+    transform: translateX(-50%);
+}
+.contact-content{
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.contact-width .contact-content .card{
+    border-radius: 50%;
+    width:25%;
+    height: 300px;
+    text-align: center;
+}
+
+.contact-text{
+    font-size: 30px;
+    color: rgb(250, 250, 250);
+    font-weight: 500;
+    padding: 30px;
+}
+
+#quote{
+    position: absolute;
+    padding-top: 2990px;
+    margin: 0%;
+    width: 1250px;
+    height: 2267px;
+}
+
+.quote-width{
+    margin: 0;
+    background-position-x: left;
+    width:1519px ;
+    height: 30px;
+    position: relative;
+    background:rgb(250, 250, 250);
+}
+
+.quote-txt {
+    position: relative;
+    text-align: center;
+    padding-top: 15px;
+    color :rgb(5, 5, 5);
+    font-weight:bold;
+    
+    font-size: 120%;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.quote-txt span{
+    font-style: italic;
+    font-family: 'Pacifico', cursive;
+    color: rgb(5, 161, 83);
+}
+
+.card-right{
+    padding-left: 10px;
+}
+
+.about-content1 span{
+    color: rgb(5, 161, 83);
+}
+
+.about-txt .right p{
+    font-weight:normal;
+    white-space:pre-wrap;
+    font-family:'Vollkorn', serif;
+    font-size:113%;
+}
+
